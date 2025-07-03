@@ -11,6 +11,10 @@ class Completion(enum.Enum):
     Completed = 3
     Endless = 4
 
+    @classmethod
+    def choices(_class):
+        return [(choice.name, choice.value) for choice in _class]
+
     def get_color(self):
         if (self == self.Unplayed):
             return 'primary'
@@ -31,6 +35,10 @@ class Ownership(enum.Enum):
     Subscription = 3
     Wishlist = 4
 
+    @classmethod
+    def choices(_class):
+        return [(choice.name, choice.value) for choice in _class]
+
 class Priority(enum.Enum):
     Abandoned = -1
     Paused = 1
@@ -39,6 +47,10 @@ class Priority(enum.Enum):
     High = 4
     NowPlaying = 5
     Replay = 6
+
+    @classmethod
+    def choices(_class):
+        return [(choice.name, choice.value) for choice in _class]
 
 class GameEntry(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)

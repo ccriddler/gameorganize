@@ -1,8 +1,6 @@
 from .db import db
-from .model.game import GameEntry, Completion, Priority
-from .model.platform import Platform, get_user_platforms
-from .model.user import User
 from .forms.game import GameEntryForm
+from .model.game import GameEntry
 from flask import Blueprint, render_template, request, url_for, redirect, flash, abort
 from flask_login import login_required, current_user
 
@@ -16,8 +14,7 @@ def detail(id):
     abort(404)
 
   _game_form = GameEntryForm()
-  _game_form.platform.choices = [platform.name for platform in _game.user.platforms]
-  _game_form.platform.data = _game.platform
+  _game_form.from_game(game=_game)
 
   return render_template(
     'game/detail.html',
@@ -36,16 +33,15 @@ def update(id):
   if(_game.user_id != current_user.id):
     abort(403)
 
+  form = GameEntryForm(request.form)
+  form.from_user(user=_game.user)
+
   try:
-    if(not request.form.get("name")):
-      raise ValueError("Empty game name")
-    _game.name = request.form.get("name")
-    _game.platform_id = request.form.get("platform")
-    _game.completion = request.form.get("completion")
-    _game.priority = request.form.get("priority")
-    _game.cheev = request.form.get("cheev")
-    _game.cheev_total = request.form.get("cheev_total")
-    _game.notes = request.form.get("notes")
+    if(not form.validate()):
+      raise ValueError(f"Form validation failed! {form.errors}")
+
+    form.to_game(_game)
+
     db.session.commit()
   except Exception as e:
     flash(f"DB Error: {e}")
@@ -53,7 +49,6 @@ def update(id):
 
   flash(f"Updated game: '{_game.name}'")
   return redirect(url_for('game.detail', id=id))
-
 
 @game.route("/<id>/delete", methods=['POST'])
 @login_required
@@ -75,29 +70,26 @@ def delete(id):
 @game.route("/add", methods=['GET'])
 @login_required
 def add():
+  _game_form = GameEntryForm(user=current_user)
+
   return render_template(
     'game/add.html',
-    Completion=Completion,
-    Priority=Priority,
-    platforms=current_user.platforms,
+    form=_game_form,
   )
 
 @game.route("/add", methods=['POST'])
 @login_required
 def add_post():
+  form = GameEntryForm(form=request.form)
+  
   try:
-    if(not request.form.get("name")):
-      raise ValueError("Empty game name")
-    new_game = GameEntry(
-      name = request.form.get("name"),
-      platform_id = request.form.get("platform"),
-      user_id = current_user.id,
-      completion = request.form.get("completion"),
-      priority = request.form.get("priority"),
-      cheev = request.form.get("cheev"),
-      cheev_total = request.form.get("cheev_total"),
-      notes = request.form.get("notes"),
-    )
+    if(not form.validate()):
+      raise ValueError(f"Form validation failed! {form.errors}")
+
+    new_game = GameEntry()
+
+    form.to_game(new_game)
+
     db.session.add(new_game)
     db.session.commit()
   except Exception as e:
