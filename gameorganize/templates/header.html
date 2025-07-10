@@ -1,13 +1,10 @@
-<nav class="navbar navbar-expand-sm bg-primary justify-content-between">
-    <a class="navbar-brand" href="/">GameOrganize</a>
-    <ul class="navbar-nav mr-sm">
-        {% if not current_user.is_authenticated %}
-            <!--<a class="nav-item nav-link" href="/login">Login</a>
-            <a class="nav-item nav-link" href="/signup">Signup</a>-->
-        {% else %}
-            <!--<a class="nav-item nav-link" href="/{{current_user.username}}">{{current_user.username}}</a>-->
-            <a class="nav-item nav-link" href="/import">Import</a>
-            <a class="nav-item nav-link" href="/logout">Logout</a>
-        {% endif %}
-    </ul>
-</nav>
+<header>
+    <nav>
+        <ul>
+            <li id="logo"> <a href="/">GameOrganize</a></li>
+            {% if current_user.is_authenticated %}
+                <li> <a href="/logout">Logout</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>

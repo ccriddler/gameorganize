@@ -1,25 +1,54 @@
 {% extends "base.html" %}
-{% block content %}
-<form id="details" action="" method="post">
-    {{ form.csrf_token }}
-    {{ form.name.label }} {{ form.name(class="form-control") }}
-    {{ form.platform.label }} {{ form.platform(class="form-control") }}
-    {{ form.completion.label }} {{ form.completion(class="form-control") }}
-    {{ form.priority.label }} {{ form.priority(class="form-control") }}
-    {{ form.cheev.label }} {{ form.cheev(class="form-control") }}
-    {{ form.cheev_total.label }} {{ form.cheev_total(class="form-control") }}
-    {{ form.notes.label }} {{ form.notes(class="form-control") }}
-    <input type="hidden" name="id" value="{{ game.id }}" />
-</form>
-<form id="delete" action="{{ url_for('game.delete', id=game.id) }}" method="post">
-    <input type="hidden" name="id" value="{{ game.id }}" />
-</form>
 
-<div>
-    {% if current_user.id == game.user.id %}
-        <button form="details" type="submit" class="btn btn-success">Save</button>
-        <button form="delete" type="submit" class="btn btn-danger">Delete</button>
-    {% endif %}
-    <a href="{{url_for('user.detail', username=game.user.username)}}" class="btn btn-secondary">Back</a>
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/static/game.css">
+{%endblock%}
+
+{% block content %}
+<div id="sidebar" class="box">
+    <div id="boxart" class="row content boxcenter">
+        Boxart
+    </div>
+    <div>
+        <select name="Completion" id="completion" class="content boxcenter">
+            <option>Beaten</option>
+            <option>Started</option>
+            <option>Completed</option>
+        </select>
+    </div>
+    <div>
+        <ul>
+            <li>Platform:<a href="/">{{game.platform.name}}</a></li>
+            <li>Released: 20XX</li>
+            <li>Rating: M</li>
+            <li>Publisher: Nintendon't</li>
+        </ul>
+    </div>
+</div>
+<div id="content" class="box">
+    <div class="row header">
+        <h2>{{game.name}}</h2>
+    </div>
+    <div class="row content">
+        <b>Activity</b>
+        <ul>
+            <li>2024-01-01: Played for first time</li>
+            <li>2025-02-01: Beaten</li>
+            <li>2025-03-01: Completed</li>
+            <li>2025-08-01: Started new playthrough</li>
+            <li>2026-01-01: Beaten</li>
+        </ul>
+    </div>
+    {% if game.cheev_total != 0 %}
+        <div class="row content">
+            <b>Achievements</b>
+            <div>{{game.cheev}} / {{game.cheev_total}}</div>
+            <progress id="cheev_bar" max="{{game.cheev_total}}" value="{{game.cheev}}"></progress>
+        </div>
+    {%endif%}
+    <div class="row content">
+        <b>Notes</b>
+        <p>{{game.notes}}</p>
+    </div>
 </div>
 {% endblock %}

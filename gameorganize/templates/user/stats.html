@@ -1,22 +1,9 @@
-<div id="stats" class="container">
-<div class="container">
-    <div class="row">
+<div class="box row">
     {% for completion in stats %}
-        <div class="col-sm">
+        <div class="box row">
             <a class="plainlink" href="{{url_for('user.detail', username=username, completion=completion.value)}}">{{completion.name}}</a>
-            <div class="progress">
-                <div 
-                    class="progress-bar bg-{{completion.get_color()}}" 
-                    role="progressbar" 
-                    style="width: {{stats[completion]}}%" 
-                    aria-valuenow="{{stats[completion]}}" 
-                    aria-valuemin="0" 
-                    aria-valuemax="100">
-                {{stats[completion]}}%
-                </div>
-            </div>
+            {{stats[completion]}}%
+            <progress id="progress_{{completion.name}}" max="100" value="{{stats[completion]}}"></progress>
         </div>
     {% endfor %}
-    </div>
-</div>
 </div>

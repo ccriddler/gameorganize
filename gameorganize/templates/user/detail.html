@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/static/user.css">
+{%endblock%}
+
 {% block content %}
 
 <br>
@@ -10,19 +14,22 @@
 
 <div class="d-flex">
   {%if username == current_user.username%}
-    <a class="p-2 btn btn-success" href="{{ url_for('game.add')}}">New</a>
-    <button class="p-2 btn btn-danger" data-toggle="collapse" data-target="#edit">Edit</button>
+    <a href="{{ url_for('game.add')}}">New</a>
+    <a href="/import">Import</a>
+    <!--button data-toggle="collapse" data-target="#edit">Edit</button-->
   {% endif %}
 
-  <a class="p-2 btn btn-warning" href="{{ url_for('platforms.details', username=username)}}">Platforms</a>
-  <button class="p-2 btn btn-primary" data-toggle="collapse" data-target="#filter">Filter</button>
+  <a href="{{ url_for('platforms.details', username=username)}}">Platforms</a>
+  <!--button data-toggle="collapse" data-target="#filter">Filter</button-->
 </div>
 
+<!--
 {%if username == current_user.username%}
   {% include "user/edit.html" %}
 {% endif %}
 
 {% include "user/filter.html" %}
+-->
 
 <form id="user" action="" method="post">
 <table id="data" class="table table-striped">
@@ -34,7 +41,6 @@
     <th>Completion</th>
     <th>Achievements</th>
     <th>Priority</th>
-    <th>Notes</th>
     </tr>
 </thead>
 <tbody>
@@ -47,30 +53,24 @@
             <a href="{{ url_for ('game.detail', id=game.id) }}">{{ game.name }}</a>
         </td>
         <td>
-            <a class="plainlink" href="{{ url_for('user.detail', username=username, platform_id=game.platform_id) }}">{{ game.platform.name }}</a>
+            <a href="{{ url_for('user.detail', username=username, platform_id=game.platform_id) }}">{{ game.platform.name }}</a>
         </td>
         <td>
-            <div class="badge bg-{{game.completion.get_color()}}">
-                <a class="plainlink" href="{{ url_for('user.detail', username=username, completion=game.completion.value) }}">{{ game.completion.name }}</a>
+            <div>
+                <a href="{{ url_for('user.detail', username=username, completion=game.completion.value) }}">{{ game.completion.name }}</a>
             </div>
         </td>
         <td>
-            {% if game.cheev > 0 or game.cheev_total > 0 %}
-                <div>
-                    <progress id="cheev_prog" max="{{ game.cheev_total }}" value="{{ game.cheev }}"></progress>
-                    {{ game.cheev }} / {{ game.cheev_total }}
-                    {{ game.get_cheev_icon () }}
+            {% if game.cheev_total > 0 %}
+                <div class="box row">
+                    <div>{{ game.cheev }}/{{ game.cheev_total }}</div>
+                    <progress id="cheev_bar" max="{{game.cheev_total}}" value="{{game.cheev}}"></progress>
                 </div>
             {% else %}
             {% endif %}
         </td>
         <td>
-            <a class="plainlink" href="{{ url_for('user.detail', username=username, priority=game.priority.value) }}">{{ game.priority.name }}</a>
-        </td>
-        <td>
-            {% if game.notes %}
-                <button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#notesModal" data-name="{{game.name}}" data-notes="{{game.notes}}">View</button>
-            {% endif %}
+            <a href="{{ url_for('user.detail', username=username, priority=game.priority.value) }}">{{ game.priority.name }}</a>
         </td>
     </tr>
     {% endfor %}
@@ -78,65 +78,20 @@
 </table>
 </form>
 
-<div class="modal" id="notesModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Notes</h5>
-      </div>
-      <div class="modal-body">
-        <div id="modal-text">Da notes</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 {%endblock%}
 
 {% block scripts %}
   <script>
-    $(document).ready(function () {
-      $('#data').DataTable({
-        paging: false,
-        layout: {
-            topEnd: null,
-            bottomEnd: 'paging'
-        },
-        order: [[2, 'asc']],
-        columns: [
-          {orderable: false, searchable: false},
-          {orderable: true, searchable: true},
-          {orderable: true, searchable: true},
-          {orderable: true, searchable: true},
-          {orderable: true, searchable: true},
-          {orderable: true, searchable: false},
-          {orderable: true, searchable: false},
-        ],
-      });
-    });
-
     $('#select-all').click(function(event) {   
         if(this.checked) {
-            $(':checkbox').each(function() {
+            $('#data :checkbox').each(function() {
                 this.checked = true;                        
             });
         } else {
-            $(':checkbox').each(function() {
+            $('#data :checkbox').each(function() {
                 this.checked = false;                       
             });
         }
     }); 
-
-    $('#notesModal').on('focus', function (event) {
-        var button = $(event.relatedTarget)
-        var name = button.data('name') 
-        var notes = button.data('notes') 
-        var modal = $(this)
-        modal.find('.modal-title').text('Notes for ' + name)
-        modal.find('.modal-body').text(notes)
-    })
   </script>
 {% endblock %}
