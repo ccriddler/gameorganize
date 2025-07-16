@@ -6,17 +6,17 @@
 
 {% block content %}
 <div id="sidebar" class="box">
-    <div id="boxart" class="row content boxcenter">
+    <div id="boxart" class="content">
         Boxart
     </div>
-    <div>
-        <select name="Completion" id="completion" class="content boxcenter">
+    <div class="content">
+        <select name="Completion" id="completion" >
             <option>Beaten</option>
             <option>Started</option>
             <option>Completed</option>
         </select>
     </div>
-    <div>
+    <div class="content">
         <ul>
             <li>Platform:<a href="/">{{game.platform.name}}</a></li>
             <li>Released: 20XX</li>
@@ -25,11 +25,11 @@
         </ul>
     </div>
 </div>
-<div id="content" class="box">
-    <div class="row header">
+<div class="box">
+    <div class="content">
         <h2>{{game.name}}</h2>
     </div>
-    <div class="row content">
+    <div class="content">
         <b>Activity</b>
         <ul>
             <li>2024-01-01: Played for first time</li>
@@ -40,13 +40,13 @@
         </ul>
     </div>
     {% if game.cheev_total != 0 %}
-        <div class="row content">
+        <div class="content">
             <b>Achievements</b>
             <div>{{game.cheev}} / {{game.cheev_total}}</div>
             <progress id="cheev_bar" max="{{game.cheev_total}}" value="{{game.cheev}}"></progress>
         </div>
     {%endif%}
-    <div class="row content">
+    <div class="content">
         <b>Notes</b>
         <p>{{game.notes}}</p>
     </div>

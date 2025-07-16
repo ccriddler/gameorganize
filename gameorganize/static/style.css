@@ -62,29 +62,39 @@ td
     padding: 5px;
 }
 
-.box.row {
+.box.column {
     border: 1px dotted grey;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
 }
 
-
-.spacer {
-  flex-grow: 1;
+.box.row {
+    border: 1px dotted grey;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
 }
 
-.box .row.content {
+.box .content {
     border: 1px dotted grey;
     flex: 1 1 auto;
     padding: 5px;
 }
 
-.box .row.footer {
-    flex: 0 1 40px;
+form .field {
+    border: 1px dotted grey;
+    flex: 1 1 auto;
+    padding: 5px;
 }
 
-.boxcenter
-{
-    justify-content:center;
-    align-items: center;
+form button {
+    border: 1px dotted grey;
+    flex: 1 1 auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.spacer {
+  flex-grow: 1;
 }
