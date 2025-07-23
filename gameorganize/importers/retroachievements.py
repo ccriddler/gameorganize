@@ -1,55 +1,64 @@
 from gameorganize.model.game import GameEntry, Completion
-from gameorganize.model.platform import Platform, find_platform
-import requests
+from gameorganize.model.platform import Platform#, find_or_create_platform
+from gameorganize.importers.importer import ImporterBackend
+from gameorganize.db import db
 
 class ImporterRA():
-    def __init__(self, username:str, api_key:str):
+    def __init__(self, backend : ImporterBackend, username:str, api_key:str):
+        self.backend = backend
         self.username = username
         self.api_key = api_key
 
-    def fetch(self):
-        params = {
+        self.params_default = {
             "z": self.username, 
             "y": self.api_key, 
             "u": self.username 
         }
 
-        r = requests.get(
-            "https://retroachievements.org/API/API_GetUserCompletionProgress.php", 
-            params=params
+    def parse_completion(self, game : dict):
+        completion_award = game.get("HighestAwardKind")
+
+        if(completion_award):
+            if("beaten" in completion_award):
+                return Completion.Beaten
+            if("mastered" in completion_award):
+                return Completion.Completed
+
+        return Completion.Started
+
+    def parse_platform(self, game : dict):
+        return Platform(
+            name = game.get("ConsoleName"),
+            user = self.backend.user
         )
 
-        if(r.status_code != 200):
-            raise Exception(f"Error fetching data, {r.status_code}: {r.reason}")
+    def parse_game(self, game : dict):
+        return GameEntry(
+            name = game.get("Title"),
+            completion = self.parse_completion(game),
+            cheev = game.get("NumAwarded", 0),
+            cheev_total = game.get("MaxPossible", 0),
+            user = self.backend.user,
+        )
 
-        return r.json()
+    def get_user_completion_progress(self):
+        return self.backend._get("https://retroachievements.org/API/API_GetUserCompletionProgress.php")
 
-    def parse(self, res : dict):
-        all_db_elements = []
+    def add(self, game : dict):
+        platform = self.backend.find_or_create_platform(game.get("ConsoleName", ""))
 
-        for entry in res.get("Results", []):
-            completion = Completion.Started
-            completion_award = entry.get("HighestAwardKind")
-            if(completion_award):
-                if("beaten" in completion_award):
-                    completion = Completion.Beaten
-                if("mastered" in completion_award):
-                    completion = Completion.Completed
+        new_game = self.parse_game(game)
+        new_game.platform = platform
+        db.session.add(new_game)
+        db.session.commit()
 
-            platform_name = entry.get("ConsoleName")
-            platform = find_platform(platform_name)
-            if(not platform):
-                platform = Platform(name=platform_name)
-                all_db_elements.append(platform)
+        return new_game
 
-            new_game = GameEntry(
-                name = entry.get("Title"),
-                platform = platform,
-                completion = completion,
-                cheev = entry.get("NumAwarded", 0),
-                cheev_total = entry.get("MaxPossible", 0)
-            )
+    def add_all(self, meta : dict):
+        all_games = []
 
-            all_db_elements.append(new_game)
+        for game_meta in meta.get("Results", []):
+            new_game = self.add(game_meta)
+            all_games.append(new_game)
         
-        return all_db_elements
+        return all_games

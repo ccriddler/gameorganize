@@ -1,6 +1,6 @@
 from .db import db
 from .model.user import User
-from .model.platform import Platform, get_user_platforms
+from .model.platform import Platform
 from flask import Blueprint, render_template, request, url_for, redirect, flash, abort
 from flask_login import login_required, current_user
 

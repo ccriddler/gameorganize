@@ -1,102 +1,97 @@
-from gameorganize.model.game import GameEntry, Completion, Ownership
-from gameorganize.model.platform import Platform, find_platform
-import requests
+from gameorganize.model.game import GameEntry, Completion
+#from gameorganize.model.platform import Platform, find_or_create_platform
+from gameorganize.importers.importer import ImporterBackend
 
 class ImporterSteam():
-    def __init__(self, steamId:str, apiKey:str):
-        self.steamId = steamId
-        self.apiKey = apiKey
+    def __init__(self, backend : ImporterBackend, steam_id:str, api_key:str):
+        self.backend = backend
+        self.steam_id = steam_id
+        self.api_key = api_key
 
-    def fetch_games(self):
-        """
-        Fetch info for all games belonging to a given steam user
-        """
-        print(f"Fetching games for steam user id {self.steamId}")
-        params={
-            "key":self.apiKey,
-            "steamid":self.steamId,
-            "include_appinfo":1,
-            "include_played_free_games":1,
+        self.params_default = {
+            "key":self.api_key,
+            "steamid":self.steam_id,
             "format":"json",
         }
 
-        r = requests.get(
-            "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/",
-            params=params
+        self.platform = backend.find_platform("Steam") #find_or_create_platform("Steam")
+
+    # API data -> Database objects
+    def _parse_game(self, meta_game : dict, meta_cheev : dict = {}):
+        game_entry = GameEntry(
+            name = meta_game.get("name", ""),
+            platform = self.platform,
+            ownership = Ownership.Digital,
         )
 
-        return r.json()
+        if(meta_cheev):
+            cheev_all = meta_cheev.get("playerstats", {}).get("achievements", [])
+            cheev_got = list(filter(lambda a: (a["achieved"] == 1), cheev_all)) ,
 
-    def fetch_stats(self, app_id:str):
-        """
-        Fetch achievement data & stats for a given appid
-        """
-        print(f"Fetching stats for steam appid {app_id}")
-        params={
-            "key":self.apiKey,
-            "steamid":self.steamId,
-            "appid":app_id,
-            "format":"json",
-        }
+            playtime = meta_game.get("playtime_forever",0),
 
-        r = requests.get(
-            "https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/",
-            params=params
+            completion = Completion.Unplayed
+            if(playtime > 0):
+                completion = Completion.Started
+            if(len(cheev) > 0 and cheev_got == cheev):
+                completion = Completion.Completed
+
+            game_entry.cheev = len(cheev_got)
+            game_entry.cheev_total = len(cheev_all)
+            game_entry.completion = completion
+
+        return game_entry
+
+    # Steam API Wrapper functions
+
+    # https://developer.valvesoftware.com/wiki/Steam_Web_API#GetOwnedGames_(v0001)
+    def get_owned_games(self, include_appinfo=1, include_ftp=1):
+        print(f"Fetching games for user id {self.steam_id}")
+
+        return self.backend._get(
+            "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/", 
+            {
+                "include_gameinfo":include_appinfo,
+                "include_played_free_games":include_ftp,
+            }
         )
 
-        return r.json()
+    # https://developer.valvesoftware.com/wiki/Steam_Web_API#GetPlayerAchievements_(v0001)
+    def get_player_achievements(self, app_id:str):
+        print(f"Fetching player achievements for appid {app_id}")
 
-    def fetch(self):
-        """
-        Fetch all game info, plus achievement data for given user
-        """
-        
-        data = self.fetch_games().get("response",{}).get("games", [])
+        return self.backend._get(
+            "https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/", 
+            {
+                "appid":app_id,
+            }
+        )
 
-        for idx,game in enumerate(data):
-            data[idx]["stats"] = self.fetch_stats(game["appid"])
-        
-        return data
-    
-    def get_completion(self, playtime:int, stats:dict):
-        """
-        Get game completion based on steam api stats
-        """
-        cheev = stats.get("playerstats", {}).get("achievements", [])
-        cheev_got = list(filter(lambda a: (a["achieved"] == 1), cheev))
+    # Combine get reuests for achievements + owned games
+    def get_owned_games_and_achievements(self):
+        meta_all = self.get_owned_games()
 
-        completion = Completion.Unplayed
-        if(playtime > 0):
-            completion = Completion.Started
-        if(len(cheev) > 0 and cheev_got == cheev):
-            completion = Completion.Completed
+        cheev_dict = {}
 
-        return [completion, cheev, cheev_got]
-    
-    def parse(self, res:dict):
-        all_db_elements = []
+        # Fetch achievement data, inject into big game list
+        for game in meta_all.get("response", {}).get("games", []):
+            appid = game.get("appid", 0)
+            cheev = self.get_player_achievements(appid)
+            cheev_dict[appid] = cheev
 
-        platform_name = "Steam"
-        platform = find_platform(platform_name)
-        if(not platform):
-            platform = Platform(name=platform_name)
-            all_db_elements.append(platform)
+        meta_all["response"]["achievements"] = cheev_dict
 
-        for entry in res:
-            completion,cheev,cheev_got = self.get_completion(
-                entry.get("playtime_forever",0),
-                entry.get("stats", {})
-            )
+        return meta_all
 
-            new_game = GameEntry(
-                name = entry.get("name"),
-                platform = platform,
-                completion = completion,
-                ownership = Ownership.Digital,
-                cheev = len(cheev_got),
-                cheev_total = len(cheev)
-            )
+    def parse_owned_games(self, meta : dict):
+        meta_game_all = meta.get("response", {}).get("games", [])
+        meta_cheev_all = meta.get("response", {}).get("achievements", {})
 
-            all_db_elements.append(new_game)
+        all_games = []
 
-        return all_db_elements
+        for meta_game in meta_game_all:
+            appid = meta_game.get("appid", 0)
+            game_entry = self._parse_game(meta_game, meta_cheev_all.get(appid, {}))
+            all_games.append(game_entry)
+
+        return all_games

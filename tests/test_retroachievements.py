@@ -1,4 +1,7 @@
 from gameorganize.importers.retroachievements import ImporterRA
+from gameorganize.importers.importer import ImporterBackend
+from gameorganize.model.user import User
+from gameorganize.model.game import Completion
 from pathlib import Path
 import json
 import pytest
@@ -13,10 +16,42 @@ def test_fetch(apiId, apiKey):
     with open("data/retroachievements.json", "w") as buf:
         json.dump(fdata, buf)
 
-@pytest.mark.skip(reason="unclosed db errors")
-def test_parse(db_session):
-    importer = ImporterRA(None, None)
+def test_add(db_session):
+    user = User(
+        username="goodname",
+        password="GoodPassword",
+    )
+
+    db_session.add(user)
+    db_session.commit()
+
+    backend = ImporterBackend(user)
+    importer = ImporterRA(backend, None, None)
+
     with open(basedir / "data/retroachievements.json", "r") as buf:
         data = json.loads(buf.read())
-        games = importer.parse(data)
-    #assert True
+
+        new_game = importer.add(data.get("Results")[0])
+
+        assert(new_game.name == "Pikmin")
+        assert(new_game.platform.name == "GameCube")
+        assert(new_game.completion == Completion.Started)
+
+
+def test_add_all(db_session):
+    user = User(
+        username="goodname",
+        password="GoodPassword",
+    )
+
+    db_session.add(user)
+    db_session.commit()
+
+    backend = ImporterBackend(user)
+    importer = ImporterRA(backend, None, None)
+    with open(basedir / "data/retroachievements.json", "r") as buf:
+        data = json.loads(buf.read())
+
+        games = importer.add_all(data)
+
+        assert(len(data.get("Results")) == len(games))

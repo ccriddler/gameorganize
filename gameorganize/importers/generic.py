@@ -1,31 +1,7 @@
 from gameorganize.db import db
-from gameorganize.model.platform import Platform, find_platform
+from gameorganize.model.platform import Platform
 from gameorganize.model.game import GameEntry, Completion, Priority
 from flask import flash
-import csv
-
-def find_or_create_platform(user, platform_name):
-  platform = db.session.query(Platform).filter_by(name=platform_name).first()
-
-  if(platform):
-    return platform
-  
-  try:
-    new_platform = Platform(
-      name = platform_name,
-      user = user
-    )
-
-    db.session.add(platform)
-    db.session.commit()
-
-  except Exception as e:
-    db.session.rollback()
-    flash(f"DB Error: {e}")
-    print(e)
-    return None
-
-  return new_platform
 
 def parse_csv_line(line, user):
   platform_name = line.get("Platform")

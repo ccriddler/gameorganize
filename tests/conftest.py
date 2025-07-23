@@ -32,7 +32,6 @@ def app_runner(app):
 def db_session(app):
     with app.app_context():
         try:
-            #db.create_all()
             yield db.session
             db.session.rollback()
             db.session.close()

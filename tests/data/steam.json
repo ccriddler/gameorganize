@@ -10,7 +10,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1398142336,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -28,7 +28,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -46,7 +46,7 @@
         "playtime_deck_forever": 2,
         "rtime_last_played": 1706697892,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -64,7 +64,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -87,7 +87,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -106,7 +106,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1478407973,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -124,7 +124,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1687677181,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -142,7 +142,7 @@
         "playtime_deck_forever": 9,
         "rtime_last_played": 1675162282,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -160,7 +160,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -181,7 +181,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -203,7 +203,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -221,7 +221,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -240,7 +240,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -258,7 +258,7 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1676114085,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -277,7 +277,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1479267523,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -296,7 +296,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675298852,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Half-Life 2",
@@ -482,7 +482,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -500,7 +500,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 86400,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -518,7 +518,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -537,7 +537,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1671772076,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Half-Life 2: Episode One",
@@ -624,7 +624,7 @@
         "playtime_deck_forever": 29,
         "rtime_last_played": 1665915353,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Portal",
@@ -721,7 +721,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1567905930,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Half-Life 2: Episode Two",
@@ -858,7 +858,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662242,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -876,7 +876,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1526173478,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -894,7 +894,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1485453038,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -912,7 +912,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1370901012,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -930,7 +930,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1343804400,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -948,7 +948,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1343890800,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -966,7 +966,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704103301,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -989,7 +989,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -1007,7 +1007,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1654323909,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1025,7 +1025,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1434918621,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1043,7 +1043,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1582179436,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -1061,7 +1061,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1079,7 +1079,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1097,7 +1097,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1512766086,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1115,7 +1115,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1574483728,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1133,7 +1133,7 @@
         "playtime_deck_forever": 8,
         "rtime_last_played": 1676692408,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1151,7 +1151,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1608858833,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1169,7 +1169,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1548566961,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -1192,7 +1192,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -1211,7 +1211,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675300031,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Machinarium",
@@ -1293,7 +1293,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662691,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Call of Duty: Modern Warfare 2 (2009)",
@@ -1564,7 +1564,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662686,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -1582,7 +1582,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1620192035,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -1600,7 +1600,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1363244400,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -1619,7 +1619,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1712475773,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Samorost 2",
@@ -1705,7 +1705,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1567138805,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -1728,7 +1728,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -1750,7 +1750,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Metro 2033",
@@ -2011,7 +2011,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1412459392,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -2030,7 +2030,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1370900605,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Batman: Arkham Asylum GOTY Edition",
@@ -2287,7 +2287,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -2305,7 +2305,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675299622,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -2327,7 +2327,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Amnesia: The Dark Descent",
@@ -2439,7 +2439,7 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1716432515,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "VVVVVV",
@@ -2556,7 +2556,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1620360585,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Sid Meier's Civilization V",
@@ -4008,7 +4008,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1557036126,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -4032,7 +4032,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Borderlands GOTY Enhanced",
@@ -4454,7 +4454,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1632028229,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Fallout: New Vegas",
@@ -4852,7 +4852,7 @@
         "rtime_last_played": 1430767600,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Super Meat Boy",
@@ -5113,7 +5113,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -5133,7 +5133,7 @@
         "rtime_last_played": 1675393784,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Portal 2",
@@ -5410,7 +5410,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1435028324,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -5429,7 +5429,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1671275919,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Terraria",
@@ -6027,7 +6027,7 @@
         "rtime_last_played": 1466997278,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "The Witcher 2: Assassins of Kings Enhanced Edition",
@@ -6309,7 +6309,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662574,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -6328,7 +6328,7 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1706053498,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "LIMBO",
@@ -6415,7 +6415,7 @@
         "playtime_deck_forever": 16,
         "rtime_last_played": 1689136236,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Bastion",
@@ -6557,7 +6557,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1357632000,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Deus Ex: Human Revolution",
@@ -6827,7 +6827,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -6847,7 +6847,7 @@
         "rtime_last_played": 1720662549,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -6867,7 +6867,7 @@
         "rtime_last_played": 1413862218,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -6886,7 +6886,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1671847726,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "The Binding of Isaac",
@@ -7403,7 +7403,7 @@
         "playtime_deck_forever": 3,
         "rtime_last_played": 1681459374,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Psychonauts",
@@ -7610,7 +7610,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1656995524,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Orcs Must Die!",
@@ -7767,7 +7767,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720663001,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -7789,7 +7789,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -7808,7 +7808,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1429480183,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -7827,7 +7827,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1429486785,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Batman: Arkham City GOTY",
@@ -8170,7 +8170,7 @@
         "rtime_last_played": 1344236400,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -8189,7 +8189,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662986,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -8208,7 +8208,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1437337746,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -8227,7 +8227,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1408934141,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -8245,7 +8245,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -8263,7 +8263,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675300008,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -8282,7 +8282,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "The Walking Dead",
@@ -8544,7 +8544,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1667372788,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Torchlight II",
@@ -9161,7 +9161,7 @@
         "playtime_deck_forever": 38,
         "rtime_last_played": 1723159229,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -9179,7 +9179,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -9198,7 +9198,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Botanicula",
@@ -9486,7 +9486,7 @@
         "rtime_last_played": 1689135237,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Tiny and Big: Grandpa's Leftovers",
@@ -9773,7 +9773,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662890,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -9792,7 +9792,7 @@
         "playtime_deck_forever": 1171,
         "rtime_last_played": 1688190924,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "DARK SOULS\u2122: Prepare To Die Edition",
@@ -10023,7 +10023,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -10042,7 +10042,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Killing Floor Mod: Defence Alliance 2",
@@ -10214,7 +10214,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1607140221,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Borderlands 2",
@@ -10612,7 +10612,7 @@
         "rtime_last_played": 1675301514,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Dishonored",
@@ -11038,7 +11038,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -11057,7 +11057,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1693201681,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Home",
@@ -11139,7 +11139,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1639636622,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "FTL: Faster Than Light",
@@ -11416,7 +11416,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1389567613,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Castle Crashers",
@@ -11502,7 +11502,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Hotline Miami",
@@ -11699,7 +11699,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1371067070,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -11717,7 +11717,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1389426134,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -11736,7 +11736,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Sonic Adventure\u2122 2 ",
@@ -11833,7 +11833,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1713405446,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "LEGO\u00ae The Lord of the Rings\u2122",
@@ -12095,7 +12095,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1381039272,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -12114,7 +12114,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720468696,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Super Hexagon",
@@ -12166,7 +12166,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1601975612,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -12185,7 +12185,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662479,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -12204,7 +12204,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1432932914,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "BioShock Infinite",
@@ -12626,7 +12626,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1548268906,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Tomb Raider",
@@ -12903,7 +12903,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -12927,7 +12927,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Prison Architect",
@@ -13039,7 +13039,7 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1720640641,
         "playtime_disconnected": 86,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "FEZ",
@@ -13120,7 +13120,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675299359,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -13142,7 +13142,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Metro: Last Light Complete Edition",
@@ -13517,7 +13517,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Gunpoint",
@@ -13749,7 +13749,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720663588,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -13768,7 +13768,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720663704,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -13787,7 +13787,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1449376932,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -13806,7 +13806,7 @@
         "playtime_deck_forever": 5,
         "rtime_last_played": 1675156997,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Teleglitch: Die More Edition",
@@ -14024,7 +14024,7 @@
         "rtime_last_played": 1675299021,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Papers, Please",
@@ -14111,7 +14111,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720663014,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -14130,7 +14130,7 @@
         "playtime_deck_forever": 7,
         "rtime_last_played": 1665830416,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -14150,7 +14150,7 @@
         "rtime_last_played": 1602187056,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Spelunky",
@@ -14272,7 +14272,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1653015223,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "THE KING OF FIGHTERS XIII STEAM EDITION",
@@ -14527,7 +14527,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Underrail",
@@ -14824,7 +14824,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1465800820,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Shovel Knight: Treasure Trove",
@@ -15540,7 +15540,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -15560,7 +15560,7 @@
         "rtime_last_played": 1704428729,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "The Binding of Isaac: Rebirth",
@@ -18767,7 +18767,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1654962623,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -18786,7 +18786,7 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1710976005,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Skullgirls 2nd Encore",
@@ -19034,7 +19034,7 @@
         "rtime_last_played": 1708827440,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Nuclear Throne",
@@ -19276,7 +19276,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662855,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "The Stanley Parable",
@@ -19348,7 +19348,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Darkest Dungeon\u00ae",
@@ -19970,7 +19970,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1602122557,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "LUFTRAUSERS",
@@ -20052,7 +20052,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1591683577,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Starbound",
@@ -20329,7 +20329,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -20352,7 +20352,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -20371,7 +20371,7 @@
         "playtime_deck_forever": 7,
         "rtime_last_played": 1665912007,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Cuphead",
@@ -20604,7 +20604,7 @@
         "rtime_last_played": 1720663067,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "LOVE",
@@ -20725,7 +20725,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -20747,7 +20747,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -20766,7 +20766,7 @@
         "playtime_deck_forever": 24,
         "rtime_last_played": 1665905085,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -20788,7 +20788,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Amnesia: A Machine for Pigs",
@@ -20845,7 +20845,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662380,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -20869,7 +20869,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "SOMA",
@@ -20941,7 +20941,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1502064906,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Resident Evil 4 (2005)",
@@ -21023,7 +21023,7 @@
         "playtime_deck_forever": 2,
         "rtime_last_played": 1684638319,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Tabletop Simulator",
@@ -21185,7 +21185,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -21207,7 +21207,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Metro: Last Light Redux",
@@ -21473,7 +21473,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675299117,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -21492,7 +21492,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662462,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -21512,7 +21512,7 @@
         "rtime_last_played": 1717821036,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "100% Orange Juice",
@@ -23170,7 +23170,7 @@
         "rtime_last_played": 1419912924,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "BattleBlock Theater",
@@ -23342,7 +23342,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "INSIDE",
@@ -23434,7 +23434,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662508,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -23453,7 +23453,7 @@
         "playtime_deck_forever": 15,
         "rtime_last_played": 1716519690,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Enter the Gungeon",
@@ -23745,7 +23745,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675299296,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Duck Game",
@@ -23858,7 +23858,7 @@
         "rtime_last_played": 1702107270,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Crypt of the NecroDancer",
@@ -24189,7 +24189,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -24208,7 +24208,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1496098622,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -24227,7 +24227,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1449889262,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Grow Home",
@@ -24382,7 +24382,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Alien: Isolation",
@@ -24654,7 +24654,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -24678,7 +24678,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "LISA",
@@ -25040,7 +25040,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1519363429,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Resident Evil",
@@ -25282,7 +25282,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1654985782,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "GUILTY GEAR XX ACCENT CORE PLUS R",
@@ -25454,7 +25454,7 @@
         "playtime_deck_forever": 161,
         "rtime_last_played": 1718515499,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "DARK SOULS\u2122 II: Scholar of the First Sin",
@@ -25671,7 +25671,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -25689,7 +25689,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1482632482,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -25708,7 +25708,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -25727,7 +25727,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1656186383,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Hollow Knight",
@@ -26064,7 +26064,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720661206,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -26083,7 +26083,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720662878,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "TEKKEN 7",
@@ -26314,7 +26314,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1716432503,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Undertale",
@@ -26333,7 +26333,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1695535337,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -26352,7 +26352,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1453510886,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -26371,7 +26371,7 @@
         "playtime_deck_forever": 113,
         "rtime_last_played": 1677645244,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Stardew Valley",
@@ -26638,7 +26638,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675300762,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Ghost of a Tale",
@@ -26760,7 +26760,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Batman\u2122: Arkham Knight",
@@ -27347,7 +27347,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675299549,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Samorost 3",
@@ -27519,7 +27519,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675298055,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Devil Daggers",
@@ -27546,7 +27546,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1641010414,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -27565,7 +27565,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720659884,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Wallpaper Engine",
@@ -27672,7 +27672,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -27691,7 +27691,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -27710,7 +27710,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -27730,7 +27730,7 @@
         "rtime_last_played": 1720662338,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -27749,7 +27749,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -27768,7 +27768,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1609047902,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "DARK SOULS\u2122 III",
@@ -28004,7 +28004,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1530830045,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -28022,7 +28022,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -28042,7 +28042,7 @@
         "rtime_last_played": 1720662673,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -28061,7 +28061,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Zenge",
@@ -28088,7 +28088,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1525015444,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -28111,7 +28111,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -28130,7 +28130,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1639290259,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -28149,7 +28149,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1498091096,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Fallout 4",
@@ -28591,7 +28591,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -28609,7 +28609,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1719554870,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -28628,7 +28628,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1691896749,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Worms W.M.D",
@@ -28799,7 +28799,7 @@
             5
         ],
         "playtime_disconnected": 1,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "The Elder Scrolls V: Skyrim Special Edition",
@@ -29196,7 +29196,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -29214,7 +29214,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1499052259,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -29233,7 +29233,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Celeste",
@@ -29419,7 +29419,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "GUN GODZ",
@@ -29485,7 +29485,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "The Witcher 3: Wild Hunt",
@@ -29897,7 +29897,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1602118441,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "BioShock 2",
@@ -30262,7 +30262,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -30281,7 +30281,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Prey",
@@ -30597,7 +30597,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Deep Rock Galactic",
@@ -30964,7 +30964,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1695533618,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Them's Fightin' Herds",
@@ -31126,7 +31126,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "BlazBlue Centralfiction",
@@ -31388,7 +31388,7 @@
         "playtime_deck_forever": 8,
         "rtime_last_played": 1683252912,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Into the Breach",
@@ -31760,7 +31760,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1672483620,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -31778,7 +31778,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1706937139,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "BattleBit Remastered",
@@ -31798,7 +31798,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1630121578,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -31817,7 +31817,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1660640154,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "DRAGON BALL FighterZ",
@@ -32014,7 +32014,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1696653356,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Divinity: Original Sin 2",
@@ -32520,7 +32520,7 @@
         "playtime_deck_forever": 402,
         "rtime_last_played": 1703376991,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -32539,7 +32539,7 @@
         "playtime_deck_forever": 5,
         "rtime_last_played": 1720468779,
         "playtime_disconnected": 1,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Baba Is You",
@@ -32652,7 +32652,7 @@
         "playtime_deck_forever": 6,
         "rtime_last_played": 1722145221,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Phasmophobia",
@@ -32944,7 +32944,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1720659730,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -32963,7 +32963,7 @@
         "playtime_deck_forever": 71,
         "rtime_last_played": 1704096536,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Puyo Puyo\u2122Tetris\u00ae ",
@@ -33194,7 +33194,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1550815681,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -33212,7 +33212,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -33230,7 +33230,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1580076153,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -33249,7 +33249,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704102377,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Katamari Damacy REROLL",
@@ -33381,7 +33381,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Yakuza 0",
@@ -33679,7 +33679,7 @@
         "rtime_last_played": 1720662439,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -33702,7 +33702,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Warhammer 40,000: Mechanicus",
@@ -33898,7 +33898,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Sekiro\u2122: Shadows Die Twice",
@@ -34090,7 +34090,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1688190863,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Among Us",
@@ -34276,7 +34276,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1539936467,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -34299,7 +34299,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "CARRION",
@@ -34426,7 +34426,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Bloons TD 6",
@@ -35198,7 +35198,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Spyro\u2122 Reignited Trilogy",
@@ -35750,7 +35750,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -35769,7 +35769,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Pilgrims",
@@ -36017,7 +36017,7 @@
         "rtime_last_played": 1675159206,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "A Short Hike",
@@ -36099,7 +36099,7 @@
         "playtime_deck_forever": 20,
         "rtime_last_played": 1706392281,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Risk of Rain 2",
@@ -36711,7 +36711,7 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1688120290,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Bug Fables: The Everlasting Sapling",
@@ -36888,7 +36888,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -36911,7 +36911,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Halo: The Master Chief Collection",
@@ -40433,7 +40433,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1712463720,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "RISK: Global Domination",
@@ -40730,7 +40730,7 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1682829981,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Hades",
@@ -40997,7 +40997,7 @@
         "playtime_deck_forever": 128,
         "rtime_last_played": 1699759809,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Gunfire Reborn",
@@ -41628,7 +41628,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1635716232,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -41651,7 +41651,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Titanfall\u00ae 2",
@@ -41928,7 +41928,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Mass Effect\u2122 Legendary Edition",
@@ -42585,7 +42585,7 @@
         "playtime_deck_forever": 42,
         "rtime_last_played": 1708396518,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Risk of Rain Returns",
@@ -43387,7 +43387,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Shin Megami Tensei III Nocturne HD Remaster",
@@ -43599,7 +43599,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Yakuza 3 Remastered",
@@ -43870,7 +43870,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1712471628,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -43889,7 +43889,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1718515172,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Goose Goose Duck",
@@ -44105,7 +44105,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Crysis Remastered",
@@ -44327,7 +44327,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1641106862,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -44346,7 +44346,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1714370237,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Vampire Survivors",
@@ -45423,7 +45423,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1659171552,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Profile is not public",
                 "success": false
@@ -45445,7 +45445,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "DEATH STRANDING DIRECTOR'S CUT",
@@ -45786,7 +45786,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "ELDEN RING",
@@ -46022,7 +46022,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Amnesia: The Bunker",
@@ -46267,7 +46267,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Lethal Company",
@@ -46291,7 +46291,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Crysis 2 Remastered",
@@ -46492,7 +46492,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Crysis 3 Remastered",
@@ -46699,7 +46699,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Pizza Tower",
@@ -47091,7 +47091,7 @@
         "playtime_deck_forever": 11,
         "rtime_last_played": 1701912661,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Overwatch\u00ae 2",
@@ -47932,7 +47932,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1705644600,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "error": "Requested app has no stats",
                 "success": false
@@ -47952,7 +47952,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1722574183,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
@@ -48964,7 +48964,7 @@
             5
         ],
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Team Fortress 2",
@@ -51585,7 +51585,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1672823439,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Dota 2",
@@ -51604,7 +51604,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1471579778,
         "playtime_disconnected": 0,
-        "stats": {
+        "achievements": {
             "playerstats": {
                 "steamID": "76561198041431472",
                 "gameName": "Source Filmmaker",
