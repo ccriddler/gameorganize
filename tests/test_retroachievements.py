@@ -8,8 +8,8 @@ import pytest
 
 basedir = Path(__file__).parent
 
-@pytest.mark.skip(reason="reduce server stress")
-def test_fetch(db_session, apiId, apiKey):
+@pytest.fixture()
+def sample_user(db_session):
     user = User(
         username="goodname",
         password="GoodPassword",
@@ -18,31 +18,34 @@ def test_fetch(db_session, apiId, apiKey):
     db_session.add(user)
     db_session.commit()
 
+    return user
+
+@pytest.fixture()
+def sample_backend(sample_user):
+    return ImporterBackend(sample_user)
+
+@pytest.mark.skip(reason="reduce server stress")
+def test_fetch(sample_backend, db_session, apiId, apiKey):
     assert(apiId != None)
     assert(apiKey != None)
-    #print(apiId, apiKey)
-    #assert(False)
 
-    backend = ImporterBackend(user)
-    importer = ImporterRA(backend=backend, username=apiId, api_key=apiKey)
+    importer = ImporterRA(
+        backend=sample_backend, 
+        username=apiId, 
+        api_key=apiKey
+    )
     fdata = importer.get_user_completion_progress()
 
     # Dump
-    #print(f"Fetched data for {len(fdata)} games")
     with open(basedir / "data/retroachievements_dump.json", "w") as buf:
         json.dump(fdata, buf)
 
-def test_add(db_session):
-    user = User(
-        username="goodname",
-        password="GoodPassword",
+def test_add(sample_backend, db_session):
+    importer = ImporterRA(
+        backend=sample_backend, 
+        username=None, 
+        api_key=None
     )
-
-    db_session.add(user)
-    db_session.commit()
-
-    backend = ImporterBackend(user)
-    importer = ImporterRA(backend, None, None)
 
     with open(basedir / "data/retroachievements_example.json", "r") as buf:
         data = json.loads(buf.read())
@@ -54,17 +57,13 @@ def test_add(db_session):
         assert(new_game.completion == Completion.Completed)
 
 
-def test_add_all(db_session):
-    user = User(
-        username="goodname",
-        password="GoodPassword",
+def test_add_all(sample_backend, db_session):
+    importer = ImporterRA(
+        backend=sample_backend, 
+        username=None, 
+        api_key=None
     )
 
-    db_session.add(user)
-    db_session.commit()
-
-    backend = ImporterBackend(user)
-    importer = ImporterRA(backend, None, None)
     with open(basedir / "data/retroachievements.json", "r") as buf:
         data = json.loads(buf.read())
 
