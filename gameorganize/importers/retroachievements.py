@@ -9,7 +9,7 @@ class ImporterRA():
         self.username = username
         self.api_key = api_key
 
-        self.params_default = {
+        self.backend.params_default = {
             "z": self.username, 
             "y": self.api_key, 
             "u": self.username 

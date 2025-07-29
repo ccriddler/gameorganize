@@ -1,0 +1,45 @@
+{
+  "Count": 1,
+  "Total": 1,
+  "Results": [
+    {
+      "GameID": 15540,
+      "Title": "Pikmin",
+      "ImageIcon": "/Images/097988.png",
+      "ConsoleID": 16,
+      "ConsoleName": "GameCube",
+      "MaxPossible": 44,
+      "NumAwarded": 44,
+      "NumAwardedHardcore": 44,
+      "MostRecentAwardedDate": "2024-08-08T21:28:45+00:00",
+      "HighestAwardKind": "mastered",
+      "HighestAwardDate": "2024-08-08T21:28:45+00:00"
+    },
+    {
+      "GameID": 2697,
+      "Title": "Burnout 3: Takedown",
+      "ImageIcon": "/Images/059270.png",
+      "ConsoleID": 21,
+      "ConsoleName": "PlayStation 2",
+      "MaxPossible": 124,
+      "NumAwarded": 46,
+      "NumAwardedHardcore": 46,
+      "MostRecentAwardedDate": "2024-04-11T09:12:31+00:00",
+      "HighestAwardKind": "beaten-hardcore",
+      "HighestAwardDate": "2024-04-11T09:12:31+00:00"
+    },
+    {
+      "GameID": 351,
+      "Title": "Star Fox",
+      "ImageIcon": "/Images/071849.png",
+      "ConsoleID": 3,
+      "ConsoleName": "SNES/Super Famicom",
+      "MaxPossible": 39,
+      "NumAwarded": 13,
+      "NumAwardedHardcore": 13,
+      "MostRecentAwardedDate": "2024-04-05T05:47:50+00:00",
+      "HighestAwardKind": null,
+      "HighestAwardDate": null
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import csv
 from gameorganize.model.user import User
 from gameorganize.model.platform import Platform
 from gameorganize.db import db
+import requests
 
 class ImporterBackend():
     def __init__(self, user : User):
