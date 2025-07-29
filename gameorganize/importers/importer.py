@@ -7,6 +7,7 @@ class ImporterBackend():
     def __init__(self, user : User):
         self.user = user
         self.params_default = {}
+        self.platform_memo = {}
 
     def csv2json(self, path):
         jsonArray = []
@@ -32,10 +33,19 @@ class ImporterBackend():
         return platform
 
     def find_platform(self, platform_name : str):
-        return db.session.query(Platform).where(
-            Platform.user_id == self.user.id and
-            Platform.name == platform_name
-        ).first()
+        # Risky speedup
+        if(not platform_name in self.platform_memo):
+            platform = db.session.query(Platform).where(
+                Platform.user_id == self.user.id and
+                Platform.name == platform_name
+            ).first()
+
+            if(not platform):
+                return None
+
+            self.platform_memo[platform_name] = platform
+
+        return self.platform_memo[platform_name]
 
     def create_platform(self, platform_name):
         platform = Platform(

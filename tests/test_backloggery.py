@@ -48,5 +48,7 @@ def test_add_all_games(db_session):
 
     all_games = importer.add_all(data)
 
+    db_session.commit()
+
     # all games were added successfully
     assert(len(user.games) == len(all_games))

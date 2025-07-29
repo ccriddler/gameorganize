@@ -44,7 +44,7 @@ class ImporterBackloggery():
         new_game = self.parse_game(game)
         new_game.platform = platform
         db.session.add(new_game)
-        db.session.commit()
+        #db.session.commit()
 
         return new_game
 
