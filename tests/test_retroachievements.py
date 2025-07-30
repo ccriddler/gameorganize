@@ -1,28 +1,10 @@
 from gameorganize.importers.retroachievements import ImporterRA
-from gameorganize.importers.importer import ImporterBackend
-from gameorganize.model.user import User
 from gameorganize.model.game import Completion
 from pathlib import Path
 import json
 import pytest
 
 basedir = Path(__file__).parent
-
-@pytest.fixture()
-def sample_user(db_session):
-    user = User(
-        username="goodname",
-        password="GoodPassword",
-    )
-
-    db_session.add(user)
-    db_session.commit()
-
-    return user
-
-@pytest.fixture()
-def sample_backend(sample_user):
-    return ImporterBackend(sample_user)
 
 @pytest.mark.skip(reason="reduce server stress")
 def test_fetch(sample_backend, db_session, apiId, apiKey):

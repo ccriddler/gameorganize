@@ -1,28 +1,9 @@
 from gameorganize.importers.backloggery import ImporterBackloggery
-from gameorganize.importers.importer import ImporterBackend
-from gameorganize.model.user import User
 from pathlib import Path
+import json
 import pytest
 
 basedir = Path(__file__).parent
-
-import json
-
-@pytest.fixture()
-def sample_user(db_session):
-    user = User(
-        username="goodname",
-        password="GoodPassword",
-    )
-
-    db_session.add(user)
-    db_session.commit()
-
-    return user
-
-@pytest.fixture()
-def sample_backend(sample_user):
-    return ImporterBackend(sample_user)
 
 def test_add_game(sample_backend, db_session):
     importer = ImporterBackloggery(sample_backend)

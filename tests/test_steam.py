@@ -26,41 +26,46 @@ def test_fetch_stats(apiId, apiKey):
 
     #print(stats)
 
-@pytest.mark.skip(reason="unclosed db errors")
-def test_completion(db_session):
-    importer = ImporterSteam(None, None)
+def test_add_achievements(sample_backend, db_session):
+    importer = ImporterSteam(
+        backend=sample_backend, 
+        steam_id=None, 
+        api_key=None
+    )    
 
-    completion_null = importer.get_completion(0, {})
-    assert completion_null[0] == Completion.Unplayed
+    #completion_null = importer.get_completion(0, {})
+    #assert completion_null[0] == Completion.Unplayed
 
-    with open(basedir / "data/steam-cheev1.json", "r") as buf:
-        stats = json.loads(buf.read())
-        completion = importer.get_completion(
-            1000,
-            stats
-        )
+    with open(basedir / "data/steam-cheev-started.json", "r") as buf:
+        meta_game = {"name":"Counter Strike: Source", "playtime_forever":1}
+        game_entry = importer.parse_game(meta_game)
 
-        assert completion[0] == Completion.Started
+        meta_cheev = json.loads(buf.read())
 
-    with open(basedir / "data/steam-cheev3.json", "r") as buf:
-        stats = json.loads(buf.read())
-        completion = importer.get_completion(
-            1000,
-            stats
-        )
+        game_entry = importer.parse_achievements(game_entry, meta_game, meta_cheev)
 
-        #print(stats)
-        #print(completion[1])
-        #print(completion[2])
+        assert(game_entry.completion == Completion.Started)
 
-        assert completion[0] == Completion.Completed
+    with open(basedir / "data/steam-cheev-completed.json", "r") as buf:
+        meta_game = {"name":"Terraria", "playtime_forever":99}
+        game_entry = importer.parse_game(meta_game)
 
-@pytest.mark.skip(reason="unclosed db errors")
-def test_parse(db_session):
-    importer = ImporterSteam(None, None)
+        meta_cheev = json.loads(buf.read())
 
-    with open(basedir / "data/steam.json", "r") as buf:
-        data = json.loads(buf.read())
-        games = importer.parse(data)
-        #print(games)
-    #assert True
+        game_entry = importer.parse_achievements(game_entry, meta_game, meta_cheev)
+
+        assert(game_entry.completion == Completion.Completed)
+
+def test_parse_owned(sample_backend, db_session):
+    importer = ImporterSteam(
+        backend=sample_backend, 
+        steam_id=None, 
+        api_key=None
+    )
+
+    with open(basedir / "data/steam-owned-games.json", "r") as buf:
+        meta_owned_games = json.loads(buf.read())
+        games = importer.add_all(meta_owned_games)
+        db_session.commit()
+
+    assert(len(sample_backend.user.games) == len(games))

@@ -1,6 +1,8 @@
 from gameorganize import create_app
 from gameorganize.config import TestingConfig
 from gameorganize.db import db
+from gameorganize.importers.importer import ImporterBackend
+from gameorganize.model.user import User
 import pytest
 
 def pytest_addoption(parser):
@@ -37,3 +39,19 @@ def db_session(app):
             db.session.close()
         finally:
             db.drop_all()
+
+@pytest.fixture()
+def sample_user(db_session):
+    user = User(
+        username="goodname",
+        password="GoodPassword",
+    )
+
+    db_session.add(user)
+    db_session.commit()
+
+    return user
+
+@pytest.fixture()
+def sample_backend(sample_user):
+    return ImporterBackend(sample_user)
