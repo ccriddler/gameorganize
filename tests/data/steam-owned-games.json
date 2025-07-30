@@ -1,0 +1,48 @@
+{
+    "response":{
+        "games":[
+            {
+                "appid": 70,
+                "name": "Half-Life",
+                "playtime_forever": 1188,
+                "img_icon_url": "95be6d131fc61f145797317ca437c9765f24b41c",
+                "playtime_windows_forever": 1,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 1112,
+                "playtime_deck_forever": 2,
+                "rtime_last_played": 1706697892,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 240,
+                "name": "Counter-Strike: Source",
+                "playtime_forever": 1453,
+                "img_icon_url": "9052fa60c496a1c03383b27687ec50f4bf0f0e10",
+                "has_community_visible_stats": true,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1472511802,
+                "content_descriptorids": [
+                    2,
+                    5
+                ],
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 105600,
+                "name": "Terraria",
+                "playtime_forever": 10730,
+                "img_icon_url": "858961e95fbf869f136e1770d586e0caefd4cfac",
+                "has_community_visible_stats": true,
+                "playtime_windows_forever": 1789,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 3990,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1671275919,
+                "playtime_disconnected": 0
+            }
+        ]
+    }
+}
