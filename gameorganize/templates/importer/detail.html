@@ -4,9 +4,9 @@
     <div class="field">
         <label for="name">Website</label>
         <select class="form-control" name="website">
-            <!--option>RetroAchievements</option>
-            <option>Steam</option-->
-            <option>CSV</option>
+            <option>RetroAchievements</option>
+            <option>Steam</option>
+            <!--option>CSV</option-->
         </select>
     </div>
     <div class="field">
@@ -17,10 +17,10 @@
         <label for="key">API Key</label>
         <input type="text" class="form-control" name="key" value="">
     </div>
-    <div class="field">
+    <!--div class="field">
         <label for="csv">Upload CSV</label>
         <input type="file" class="form-control" accept=".csv" name="csv_data" value="">
-    </div>
+    </div-->
     <div class="field">
         <button type="submit" class="btn btn-success">Import</button>
         <a href="{{ url_for('importer.detail') }}" class="btn btn-secondary">Cancel</a>
