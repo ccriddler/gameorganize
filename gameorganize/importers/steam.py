@@ -1,6 +1,6 @@
 from gameorganize.db import db
-from gameorganize.model.game import GameEntry, Completion
 from gameorganize.importers.importer import ImporterBackend
+from gameorganize.model.game import GameEntry, Completion
 
 class ImporterSteam():
     def __init__(self, backend : ImporterBackend, steam_id:str, api_key:str):

@@ -1,8 +1,9 @@
 from flask import Blueprint, render_template, request, url_for, redirect, flash
 from flask_login import login_required, current_user
+
 import gameorganize.importers
 
-importer = Blueprint('importer', __name__, template_folder='templates')
+importer = Blueprint("importer", __name__, template_folder="templates")
 
 def import_steam(id, key):
     backend = ImporterBackend(current_user)
@@ -29,7 +30,7 @@ def import_ra(id, key):
     meta = importer.get_user_completion_progress()
     return importer.add_all(meta)
 
-@importer.route("/", methods=['POST'])
+@importer.route("/", methods=["POST"])
 @login_required
 def import_post():
     site = request.form.get("website")
@@ -51,11 +52,11 @@ def import_post():
     finally:
         flash(f"Imported {len(new_games)} games from {site}")
 
-    return redirect(url_for('importer.detail'))
+    return redirect(url_for("importer.detail"))
 
-@importer.route("/", methods=['GET'])
+@importer.route("/", methods=["GET"])
 @login_required
 def detail():
     return render_template(
-        'importer/detail.html'
+        "importer/detail.html"
     )

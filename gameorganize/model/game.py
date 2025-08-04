@@ -1,7 +1,9 @@
-from gameorganize.db import db
+import enum
+
 from sqlalchemy import ForeignKey, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-import enum
+
+from gameorganize.db import db
 
 class Completion(enum.Enum):
     Null = -1
@@ -42,7 +44,7 @@ class Priority(enum.Enum):
 class GameEntry(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(nullable=False)
-    platform_id: Mapped[int] = mapped_column(ForeignKey("platform.id", ondelete='SET NULL'), nullable=True)
+    platform_id: Mapped[int] = mapped_column(ForeignKey("platform.id", ondelete="SET NULL"), nullable=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("user.id"))
     completion: Mapped[Completion] = mapped_column(default=Completion.Unplayed)
     ownership: Mapped[Ownership] = mapped_column(default=Ownership.Physical)
@@ -52,4 +54,4 @@ class GameEntry(db.Model):
     notes:Mapped[str] = mapped_column(default="")
 
     def __repr__(self):
-        return f'<Game {self.name} @ {self.platform} [{self.completion.name}]>'
+        return f"<Game {self.name} @ {self.platform} [{self.completion.name}]>"

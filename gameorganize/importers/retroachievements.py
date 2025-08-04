@@ -1,7 +1,7 @@
-from gameorganize.model.game import GameEntry, Completion
-from gameorganize.model.platform import Platform#, find_or_create_platform
-from gameorganize.importers.importer import ImporterBackend
 from gameorganize.db import db
+from gameorganize.importers.importer import ImporterBackend
+from gameorganize.model.game import GameEntry, Completion
+from gameorganize.model.platform import Platform
 
 class ImporterRA():
     def __init__(self, backend : ImporterBackend, username:str, api_key:str):

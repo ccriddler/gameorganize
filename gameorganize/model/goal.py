@@ -1,6 +1,7 @@
-from gameorganize.db import db
 from sqlalchemy import event, ForeignKey, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship, validates
+
+from gameorganize.db import db
 
 class Goal(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)
@@ -9,7 +10,7 @@ class Goal(db.Model):
     progress_max: Mapped[int] = mapped_column(nullable=False)
     game_id: Mapped[int] = mapped_column(ForeignKey("game_entry.id"))
 
-    @validates('progress_max')
+    @validates("progress_max")
     def validate_progress_max(self, key, value):
         if value <= 0:
             raise ValueError("Progress must be above 1")

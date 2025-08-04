@@ -1,21 +1,22 @@
-from .db import db
-from .model.user import User
-from .model.platform import Platform
 from flask import Blueprint, render_template, request, url_for, redirect, flash, abort
 from flask_login import login_required, current_user
 
-platforms = Blueprint('platforms', __name__, template_folder='templates')
+from gameorganize.db import db
+from gameorganize.model.platform import Platform
+from gameorganize.model.user import User
 
-@platforms.route("/<username>", methods=['GET', 'POST'])
+platforms = Blueprint("platforms", __name__, template_folder="templates")
+
+@platforms.route("/<username>", methods=["GET", "POST"])
 def details(username):
   _user = db.session.query(User).where(User.username==username).first()
   return render_template(
-    'user/platforms.html',
+    "user/platforms.html",
     username=_user.username,
     platforms=_user.platforms,
   )
 
-@platforms.route("/add", methods=['POST'])
+@platforms.route("/add", methods=["POST"])
 @login_required
 def add():
   try:
@@ -29,12 +30,12 @@ def add():
     db.session.commit()
   except Exception as e:
     flash(f"DB Error: {e}")
-    return redirect(url_for('platforms.details', username=current_user.username))
+    return redirect(url_for("platforms.details", username=current_user.username))
 
   flash(f"Added new platform {new_platform.name}")
-  return redirect(url_for('platforms.details', username=current_user.username))
+  return redirect(url_for("platforms.details", username=current_user.username))
 
-@platforms.route("/<id>/delete", methods=['POST'])
+@platforms.route("/<id>/delete", methods=["POST"])
 @login_required
 def delete(id):
   platform = db.session.get(Platform, id)
@@ -49,4 +50,4 @@ def delete(id):
   db.session.commit()
 
   flash(f"Deleted platform {platform.name}")
-  return redirect(url_for('platforms.details', username=current_user.username))
+  return redirect(url_for("platforms.details", username=current_user.username))

@@ -1,10 +1,11 @@
-from gameorganize.db import db
 from flask_wtf import FlaskForm
-from gameorganize.model.game import GameEntry, Completion, Priority
-from gameorganize.model.platform import Platform
 from wtforms import StringField, SelectField, IntegerField
 from wtforms.validators import DataRequired, Optional
 from wtforms.widgets import NumberInput, TextArea
+
+from gameorganize.db import db
+from gameorganize.model.game import GameEntry, Completion, Priority
+from gameorganize.model.platform import Platform
 
 class GameEntryForm(FlaskForm):
     def from_user(self, user):

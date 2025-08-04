@@ -1,12 +1,13 @@
-from .db import db
-from .forms.game import GameEntryForm
-from .model.game import GameEntry
 from flask import Blueprint, render_template, request, url_for, redirect, flash, abort
 from flask_login import login_required, current_user
 
-game = Blueprint('game', __name__, template_folder='templates')
+from gameorganize.db import db
+from gameorganize.forms.game import GameEntryForm
+from gameorganize.model.game import GameEntry
 
-@game.route("/<id>", methods=['GET'])
+game = Blueprint("game", __name__, template_folder="templates")
+
+@game.route("/<id>", methods=["GET"])
 def detail(id):
   _game = db.session.get(GameEntry, id)
 
@@ -17,12 +18,12 @@ def detail(id):
   _game_form.from_game(game=_game)
 
   return render_template(
-    'game/detail.html',
+    "game/detail.html",
     game=_game,
     form=_game_form,
   )
 
-@game.route("/<id>", methods=['POST'])
+@game.route("/<id>", methods=["POST"])
 @login_required
 def update(id):
   _game = db.session.get(GameEntry, id)
@@ -45,12 +46,12 @@ def update(id):
     db.session.commit()
   except Exception as e:
     flash(f"DB Error: {e}")
-    return redirect(url_for('game.detail', id=id))
+    return redirect(url_for("game.detail", id=id))
 
   flash(f"Updated game: '{_game.name}'")
-  return redirect(url_for('game.detail', id=id))
+  return redirect(url_for("game.detail", id=id))
 
-@game.route("/<id>/delete", methods=['POST'])
+@game.route("/<id>/delete", methods=["POST"])
 @login_required
 def delete(id):
   _game = db.session.get(GameEntry, id)
@@ -67,17 +68,17 @@ def delete(id):
   flash(f"Deleted game '{_game.name}'")
   return redirect(url_for("user.detail", username=current_user.username))
 
-@game.route("/add", methods=['GET'])
+@game.route("/add", methods=["GET"])
 @login_required
 def add():
   _game_form = GameEntryForm(user=current_user)
 
   return render_template(
-    'game/add.html',
+    "game/add.html",
     form=_game_form,
   )
 
-@game.route("/add", methods=['POST'])
+@game.route("/add", methods=["POST"])
 @login_required
 def add_post():
   form = GameEntryForm(form=request.form)
@@ -94,7 +95,7 @@ def add_post():
     db.session.commit()
   except Exception as e:
     flash(f"DB Error: {e}")
-    return redirect(url_for('game.add'))
+    return redirect(url_for("game.add"))
 
   flash(f"Added new game {new_game.name}")
-  return redirect(url_for('user.detail', username=current_user.username))
+  return redirect(url_for("user.detail", username=current_user.username))

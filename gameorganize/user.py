@@ -1,10 +1,11 @@
-from .db import db
-from .model.game import GameEntry, Completion, Priority
-from .model.user import User
 from flask import Blueprint, render_template, request, url_for, redirect, flash, abort
 from flask_login import login_required, current_user
 
-user = Blueprint('user', __name__, template_folder='templates')
+from gameorganize.db import db
+from gameorganize.model.game import GameEntry, Completion, Priority
+from gameorganize.model.user import User
+
+user = Blueprint("user", __name__, template_folder="templates")
 
 def get_stats(games):
   stats = {}
@@ -25,7 +26,7 @@ def get_stats(games):
 
   return stats
 
-@user.route("/edit", methods=['POST'])
+@user.route("/edit", methods=["POST"])
 @login_required
 def edit(username):
   _user = db.session.query(User).where(User.username==username).first()
@@ -37,7 +38,7 @@ def edit(username):
   args = request.form.to_dict()
   selected = [] 
   
-  for gameid in request.form.getlist('selected'):
+  for gameid in request.form.getlist("selected"):
     game = db.session.get(GameEntry, gameid)
     if(not game):
       continue
@@ -95,7 +96,7 @@ def parse_filters(args):
 
   return filters,filter_parse
 
-@user.route("/", methods=['POST'])
+@user.route("/", methods=["POST"])
 def detail_post(username):
     url_params = request.form.to_dict()
     url_params["priority"] = request.form.getlist("priority")
@@ -106,7 +107,7 @@ def detail_post(username):
 
     return redirect(url_for("user.detail", username=username, **url_params))
 
-@user.route("/", methods=['GET'])
+@user.route("/", methods=["GET"])
 def detail(username):
   user = db.session.query(User).where(User.username==username).first()
   if(not user):
@@ -119,7 +120,7 @@ def detail(username):
     games = games.filter(*filters)
 
   return render_template(
-    'user/detail.html',
+    "user/detail.html",
     filter=filter_parse,
     Completion=Completion,
     Priority=Priority,

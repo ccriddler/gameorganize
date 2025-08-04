@@ -1,7 +1,7 @@
 from gameorganize.db import db
 from gameorganize.importers.importer import ImporterBackend
 from gameorganize.model.game import GameEntry, Completion
-#from gameorganize.model.platform import Platform, find_or_create_platform
+from gameorganize.model.platform import Platform
 from gameorganize.model.user import User
 
 # Library columns:

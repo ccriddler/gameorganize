@@ -4,15 +4,15 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 def get_db_path(name):
-    #return "sqlite:///" + os.path.join(basedir, f'{name}.db')
+    #return "sqlite:///" + os.path.join(basedir, f"{name}.db")
     return f"sqlite:///{name}"
 
 # Default settings
 class Config:
-    FLASK_ENV = 'development'
+    FLASK_ENV = "development"
     DEBUG = False
     TESTING = False
-    SECRET_KEY = '7103fd2f0697987fef0626de455aeb8617f8318c2ecaad41'
+    SECRET_KEY = "7103fd2f0697987fef0626de455aeb8617f8318c2ecaad41"
 
 class DevelopmentConfig(Config):
     SQLALCHEMY_ECHO = False
@@ -26,5 +26,5 @@ class TestingConfig(Config):
     SQLALCHEMY_DATABASE_URI = get_db_path("")
 
 class ProductionConfig(Config):
-    FLASK_ENV = 'production'
+    FLASK_ENV = "production"
     SQLALCHEMY_DATABASE_URI = get_db_path("production.sqlite3")

@@ -1,24 +1,25 @@
-from flask_login import UserMixin
-from gameorganize.db import db
-from sqlalchemy.orm import Mapped, mapped_column, relationship, validates
-from .game import GameEntry
-from .platform import Platform
 import re
+
+from flask_login import UserMixin
+from sqlalchemy.orm import Mapped, mapped_column, relationship, validates
 from werkzeug.security import generate_password_hash, check_password_hash
 
+from gameorganize.db import db
+
+# At least 8 chars long, with one uppercase
 rex_password = re.compile("^(?=.*?[A-Z])(?=.*?[a-z]).{8,}$")
 
 class User(UserMixin, db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)
     username: Mapped[str] = mapped_column(unique=True)
     password_hash: Mapped[int] = mapped_column()
-    games = relationship('GameEntry', backref='user')
-    platforms = relationship('Platform', backref='user')
+    games = relationship("GameEntry", backref="user")
+    platforms = relationship("Platform", backref="user")
 
     def hash_password(self, password):
-        return generate_password_hash(password, method='pbkdf2:sha1:300')
+        return generate_password_hash(password, method="pbkdf2:sha1:300")
 
-    @validates('username')
+    @validates("username")
     def validate_username(self,key,value):
         if(not value):
             raise ValueError("Username must not be empty")
@@ -26,7 +27,7 @@ class User(UserMixin, db.Model):
     
     @property
     def password(self):
-        raise AttributeError('password not readable')
+        raise AttributeError("password not readable")
 
     @password.setter
     def password(self, password):

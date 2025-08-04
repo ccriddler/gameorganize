@@ -1,6 +1,7 @@
-from . import create_app
-from .db import db
 from flask_migrate import Migrate
+
+from gameorganize import create_app
+from gameorganize.db import db
 
 app = create_app()
 migrate = Migrate(app, db)
